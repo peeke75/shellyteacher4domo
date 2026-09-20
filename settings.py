@@ -2,11 +2,11 @@ data = { }
 # -----------------------------------------------
 # WARNING: If .ini file exists it will overwrite the default values below!
 # -----------------------------------------------
-data['mqtt_ip'] = '192.168.1.2' # mqtt server ip
+data['mqtt_ip'] = '192.168.0.17' # mqtt server ip
 data['mqtt_port'] = 1883        # mqtt server port
 data['mqtt_user'] = "mqtt"          # mqtt server username
 data['mqtt_pass'] = "user"          # mqtt server password
-data['discovery_prefix'] = 'homeassistant' # autodiscovery prefix for Domoticz
+data['discovery_prefix'] = 'domoticz' # autodiscovery prefix for Domoticz
 testrun = False
 retain  = True   # if retain is True, config template will be saved onto mqtt broker permanently
 gen1    = True  # enable Gen1 device detection
