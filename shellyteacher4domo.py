@@ -578,7 +578,16 @@ else:
     printLn("\nMQTT connection failed, alter settings, close app if necessary and retry!")
 
 decodinprog = False
+print("Passing to while loop")
+# Set the duration for the loop in seconds
+duration = 10  # e.g., 10 seconds
+start_time = time.time()
+
 while loopok:
+  current_time = time.time()
+  if current_time - start_time >= duration:
+        print("Time's up! Exiting the loop.")
+        break
   if app is not None:
    app.update()
   if startprovision:
