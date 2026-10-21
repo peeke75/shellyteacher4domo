@@ -4,8 +4,8 @@ data = { }
 # -----------------------------------------------
 data['mqtt_ip'] = '192.168.0.17' # mqtt server ip
 data['mqtt_port'] = 1883        # mqtt server port
-data['mqtt_user'] = "mqtt"          # mqtt server username
-data['mqtt_pass'] = "user"          # mqtt server password
+data['mqtt_user'] = ""          # mqtt server username
+data['mqtt_pass'] = ""          # mqtt server password
 data['discovery_prefix'] = 'domoticz' # autodiscovery prefix for Domoticz
 testrun = False
 retain  = True   # if retain is True, config template will be saved onto mqtt broker permanently
